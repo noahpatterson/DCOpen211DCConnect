@@ -110,7 +110,7 @@ module ApplicationHelper
   # Location search autocomplete data (all cities of SMC)
   # @return [Array] List of cities in SMC.
   def smc_cities
-    ['Atherton, CA','Belmont, CA','Brisbane, CA','Burlingame, CA','Colma, CA','Daly City, CA','East Palo Alto, CA','Foster City, CA','Half Moon Bay, CA','Hillsborough, CA','Menlo Park, CA','Millbrae, CA','Pacifica, CA','Portola Valley, CA','Redwood City, CA','San Bruno, CA','San Carlos, CA','San Mateo, CA','South San Francisco, CA','Woodside, CA','Broadmoor, CA','Burlingame Hills, CA','Devonshire, CA','El Granada, CA','Emerald Lake Hills, CA','Highlands-Baywood Park, CA','Kings Mountain, CA','Ladera, CA','La Honda, CA','Loma Mar, CA','Menlo Oaks, CA','Montara, CA','Moss Beach, CA','North Fair Oaks, CA','Palomar Park, CA','Pescadero, CA','Princeton-by-the-Sea, CA','San Gregorio, CA','Sky Londa, CA','West Menlo Park, CA']
+    ['Washington, DC', 'Arlington, VA']
   end
 
   def kind_terms
