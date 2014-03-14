@@ -109,6 +109,7 @@
                     = render :partial => "component/detail/mail_address", :locals => {:org=>@org,:lines=>2}
 
           -# has a physical address and the street address and zipcode differ from mailing address
+          -# needs to be more flexible when dealing with duplicate addresses
           - if @org.key?(:address) && !(@org.key?(:mail_address) && (@org.address.street == @org.mail_address.street && @org.address.zip == @org.mail_address.zip))
             %section.address-box
               %h1 Physical Address
