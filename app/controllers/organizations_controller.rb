@@ -174,7 +174,7 @@ class OrganizationsController < ApplicationController
         details = {
           'id' => o.id,
           'name' => o.name,
-          'kind' => o.kind,
+          'kind' => 'DC',#o.kind,
           'coordinates' => new_coords
         }
 
@@ -252,7 +252,7 @@ class OrganizationsController < ApplicationController
     @aggregate_kinds = ["Arts","Clinics","Education","Entertainment","Farmers' Markets","Government","Human Services","Libraries","Museums","Parks","Sports","Other"]
 
     # cached service areas
-    @aggregate_service_areas = [{:name=>'San Mateo County, CA',:value=>'smc'}]
+    @aggregate_service_areas = [{:name=>'Washington, DC',:value=>'dc'}]
 
     # cached organization names
     @aggregate_org_names = cache_filter_values(collection,'aggregate_org_names'){|org|
