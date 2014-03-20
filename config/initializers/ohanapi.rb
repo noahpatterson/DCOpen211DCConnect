@@ -4,7 +4,7 @@ stack = Faraday::Builder.new do |builder|
   builder.adapter Faraday.default_adapter
 end
 Ohanakapa.configure do |config|
-  config.api_token = 'hithereapptoken' #ENV["OHANA_API_TOKEN"]
-  config.api_endpoint = "http://localhost:8080/api/" #ENV["OHANA_API_ENDPOINT"] || 
+  config.api_token = ENV["OHANA_API_TOKEN"]
+  config.api_endpoint = ENV["OHANA_API_ENDPOINT"] || 'http://dcopen211api.herokuapp.com/api'
   config.middleware = stack
 end
