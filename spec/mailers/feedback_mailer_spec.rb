@@ -11,8 +11,8 @@ describe FeedbackMailer do
     end
 
     it "should be delivered to the default email address(es)" do
-      recipients = "anselm@codeforamerica.org, sophia@codeforamerica.org,"
-      recipients << "moncef@codeforamerica.org"
+      recipients = ""
+      recipients << "n@noahpatterson.me"
       @email.should deliver_to(recipients)
     end
 
@@ -34,8 +34,8 @@ describe FeedbackMailer do
     end
 
     it "should be delivered to the default email address(es)" do
-      recipients = "anselm@codeforamerica.org, sophia@codeforamerica.org,"
-      recipients << "moncef@codeforamerica.org"
+      recipients = ""
+      recipients << "n@noahpatterson.me"
       @email.should deliver_to(recipients)
     end
 
